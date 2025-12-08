@@ -290,7 +290,7 @@ Puedes combinar valores literales, referencias de contexto y funciones usando op
   TBD-step-4-notes.
 -->
 
-<details id=4>
+<details id=4 open>
 <summary><h2>Paso 4: Aprende a usar los distintos Contextos</h2></summary>
 
 _¡Excelente trabajo con el uso de Expresiones! :partying_face:_
