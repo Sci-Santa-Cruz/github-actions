@@ -1,7 +1,7 @@
-""" main.py"""
+"""main.py"""
 
 from time import sleep
 
-for i in range(10):
+for i in range(20):
     print("Hola Mundo #" + str(i))
-    sleep(1)
+    sleep(2)
