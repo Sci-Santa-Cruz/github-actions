@@ -1,4 +1,5 @@
 name: Expression
+run-name: "Triggered by ${{ github.event_name }}"
 on:
   workflow_dispatch:
     inputs:
