@@ -1,0 +1,28 @@
+name: Contexto
+run-name: ¡Estoy aprendiendo a usar Contextos!
+on: [push]
+
+jobs:
+  info-basica:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar info del repo
+        run: |
+          echo "Repositorio: ${{ github.repository }}"
+          echo "Rama: ${{ github.ref_name }}"
+          echo "Evento: ${{ github.event_name }}"
+          echo "Actor: ${{ github.actor }}"
+  not-main:
+    if: ${{ github.ref != 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Esta NO es la rama main, es ${{ github.ref_name }}"
+      - run: echo "El actor es ${{ github.actor }}"
+      - run: echo "El evento es ${{ github.event_name }}"
+  check-main:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Esta SI es la rama main, es ${{ github.ref_name }}"
+      - run: echo "El actor es ${{ github.actor }}"
+      - run: echo "El evento es ${{ github.event_name }}"
