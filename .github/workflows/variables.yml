@@ -21,4 +21,4 @@ jobs:
       - run: echo "Esta NO es la rama main, es ${{ github.ref_name }}"
       - run: echo "El actor es ${{ github.actor }}"
       - run: echo "El evento es ${{ github.event_name }}"
-      - run: echo "Desplegando en la rama $GITHUB_REF del repo de $Name"
+      - run: echo "Desplegando en la rama $GITHUB_REF del repo de $NAME"
